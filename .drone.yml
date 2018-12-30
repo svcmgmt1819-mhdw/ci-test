@@ -1,0 +1,14 @@
+pipeline:
+  build:
+    image: rust:1.31.1-slim-stretch
+    commands:
+      - cargo build --release
+      - cargo test
+  publish:
+    image: plugins/docker
+    repo: marcoh00/svcmgmt-testproj
+    tags: latest
+    secrets: [ docker_username, docker_password ]
+    when:
+      branch: master
+      event: tag

@@ -1,0 +1,6 @@
+[package]
+name = "testproj"
+version = "0.1.0"
+authors = ["Marco Huenseler <marcoh.huenseler+git@gmail.com>"]
+
+[dependencies]
