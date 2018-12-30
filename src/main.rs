@@ -13,7 +13,7 @@ impl Talker for Greeter {
 
 impl Talker for Lecturer {
     fn get_text() -> String {
-        String::from("Hello students!")
+        String::from("Hello everybody!")
     }
 }
 
